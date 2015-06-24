@@ -5,6 +5,8 @@ details.
 
 How to integrate Tropo with VoiceBase's audio indexing and transcription API.
 
+Full explanation of the code is at https://www.tropo.com/2015/06/advanced-transcription-analytics-voicebase-tropo/
+
 VoiceBase provides an API that can transcribe in multiple languages, provides fast, accurate transcription for longer-form text, and can classify and analyze the resulting transcription. At the basic level, you can simply get a transcription back. The audio file and transcription are then stored in your Voicebase account for searching and detailed analytics. 
 
 A Tropo recording file gets sent to a URL of your choice. To send this to Voicebase, you'll need a small application that receives the Tropo upload and then creates the Voicebase API call to send the recording for transcription. The application then waits for the transcription to be completed and does something with it, perhaps emailing it, storing in a database, or sending a text message.
