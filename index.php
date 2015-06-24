@@ -41,6 +41,7 @@ $app->post('/recording/:id', function($id) use($app) {
 		"apikey" => $app->config('apikey'),
 		"password" => $app->config('password'),
 		"action" => "uploadMedia",
+        "transcriptType" => "machine-best",
 		"mediaURL" => $app->request()->getUrl() . $app->request()->getScriptName() . "/audio/$id.wav",
 		"machineReadyCallBack" => $app->request()->getUrl() . $app->request()->getScriptName() . "/transcription",
 		"speakerChannelFlag" =>  'true',
